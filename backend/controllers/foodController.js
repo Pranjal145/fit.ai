@@ -134,7 +134,9 @@ JSON format:
 exports.getMealHistory = async (req, res) => {
   try {
     const meals = await Meal.find({ user: req.userId })
-      .sort({ createdAt: -1 })
+  .sort({ createdAt: -1 })
+
+
 
     res.json(meals)
   } catch {
