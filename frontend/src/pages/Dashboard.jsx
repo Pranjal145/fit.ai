@@ -31,7 +31,6 @@ function Dashboard() {
 
   return (
   <div className="min-h-screen flex">
-    {/* LEFT SIDEBAR */}
     <div className="w-[30%] bg-purple-200 flex flex-col items-center justify-center p-6 shadow-inner">
       <img
         src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
@@ -51,9 +50,8 @@ function Dashboard() {
       </button>
     </div>
 
-    {/* RIGHT CONTENT */}
     <div className="w-[70%] bg-gray-50 p-8 overflow-y-auto">
-      {/* FOOD INPUT */}
+
       <div className="bg-white p-6 rounded-2xl shadow-md mb-6">
         <h2 className="text-lg font-semibold mb-2">
           Enter Food You Ate
@@ -74,8 +72,6 @@ function Dashboard() {
           {loading ? "Analyzing..." : "Analyze Food"}
         </button>
       </div>
-
-      {/* NUTRITION RESULT */}
       {nutrition && (
         <div className="bg-white p-6 rounded-2xl shadow-md mb-6">
           <h2 className="text-lg font-semibold mb-3">
@@ -91,7 +87,6 @@ function Dashboard() {
         </div>
       )}
 
-      {/* EXERCISE CARDS */}
       {exercisePlan && (
         <div>
           <h2 className="text-lg font-semibold mb-4">
@@ -99,7 +94,6 @@ function Dashboard() {
           </h2>
 
           <div className="grid grid-cols-3 gap-5">
-            {/* LIGHT */}
             <div className="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg transition">
               <h3 className="text-green-600 font-semibold mb-2">
                 Light
@@ -111,7 +105,6 @@ function Dashboard() {
               </ul>
             </div>
 
-            {/* MODERATE */}
             <div className="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg transition">
               <h3 className="text-yellow-600 font-semibold mb-2">
                 Moderate
@@ -123,7 +116,6 @@ function Dashboard() {
               </ul>
             </div>
 
-            {/* INTENSE */}
             <div className="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg transition">
               <h3 className="text-red-600 font-semibold mb-2">
                 Intense
