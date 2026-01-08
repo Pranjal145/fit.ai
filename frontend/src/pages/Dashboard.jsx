@@ -31,10 +31,10 @@ function Dashboard() {
 
   return (
   <div className="min-h-screen flex">
-    {/* LEFT SIDEBAR */}
+
     <div className="w-[30%] bg-purple-200 flex flex-col items-center p-6 shadow-inner">
       
-      {/* LOGOUT BUTTON */}
+  
       <div className="w-full flex justify-start mb-8">
         <button
           onClick={() => {
@@ -48,19 +48,16 @@ function Dashboard() {
         </button>
       </div>
 
-      {/* USER PHOTO */}
       <img
         src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
         alt="User"
         className="w-40 h-40 rounded-full mb-5 border-4 border-white shadow-md"
       />
 
-      {/* USER NAME */}
       <h2 className="text-xl font-semibold mb-8">
         {user?.name}
       </h2>
 
-      {/* HISTORY BUTTON */}
       <button
         onClick={() => navigate("/history")}
         className="bg-purple-600 text-white px-6 py-2 rounded-2xl shadow-md hover:bg-purple-700 transition"
@@ -69,10 +66,8 @@ function Dashboard() {
       </button>
     </div>
 
-    {/* RIGHT CONTENT */}
     <div className="w-[70%] bg-gray-50 p-8 overflow-y-auto">
-      
-      {/* FOOD INPUT */}
+
       <div className="bg-white p-6 rounded-2xl shadow-md mb-6">
         <h2 className="text-lg font-semibold mb-2">
           Enter Food You Ate
@@ -94,7 +89,6 @@ function Dashboard() {
         </button>
       </div>
 
-      {/* NUTRITION RESULT */}
       {nutrition && (
         <div className="bg-white p-6 rounded-2xl shadow-md mb-6">
           <h2 className="text-lg font-semibold mb-3">
@@ -110,7 +104,6 @@ function Dashboard() {
         </div>
       )}
 
-      {/* EXERCISE CARDS */}
       {exercisePlan && (
         <div>
           <h2 className="text-lg font-semibold mb-4">
